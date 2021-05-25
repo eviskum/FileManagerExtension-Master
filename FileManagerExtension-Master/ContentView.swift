@@ -8,9 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var people: People
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("Antal i peopleList:  \(people.peopleList.count)")
+                .padding()
+            
+            Button(action: {
+                people.loadExamples()
+            }, label: {
+                Text("Load examples")
+            })
+
+            Button(action: {
+                people.saveToDisk()
+            }, label: {
+                Text("Save to disk")
+            })
+
+            Button(action: {
+                people.loadFromDisk()
+            }, label: {
+                Text("Load from disk")
+            })
+
+            Button(action: {
+                people.deleteFile()
+            }, label: {
+                Text("Delete file on disk")
+            })
+
+            Button(action: {
+                people.checkFileExists()
+            }, label: {
+                Text("Check if file exists")
+            })
+        }
     }
 }
 

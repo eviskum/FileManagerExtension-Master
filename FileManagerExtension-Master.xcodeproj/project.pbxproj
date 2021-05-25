@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		90EE9E3A265CE9EF00CD2B6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EE9E39265CE9EF00CD2B6F /* ContentView.swift */; };
 		90EE9E3C265CE9F200CD2B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90EE9E3B265CE9F200CD2B6F /* Assets.xcassets */; };
 		90EE9E3F265CE9F200CD2B6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90EE9E3E265CE9F200CD2B6F /* Preview Assets.xcassets */; };
+		90EE9E48265CEA2800CD2B6F /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EE9E46265CEA2800CD2B6F /* PersonModel.swift */; };
+		90EE9E51265CFBB500CD2B6F /* FileManagerExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 90EE9E50265CFBB500CD2B6F /* FileManagerExtension */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		90EE9E3B265CE9F200CD2B6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90EE9E3E265CE9F200CD2B6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		90EE9E40265CE9F200CD2B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90EE9E46265CEA2800CD2B6F /* PersonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		90EE9E4A265CEA8800CD2B6F /* FileManagerExtension */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FileManagerExtension; path = ../FileManagerExtension; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90EE9E51265CFBB500CD2B6F /* FileManagerExtension in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +41,10 @@
 		90EE9E2B265CE9EF00CD2B6F = {
 			isa = PBXGroup;
 			children = (
+				90EE9E4A265CEA8800CD2B6F /* FileManagerExtension */,
 				90EE9E36265CE9EF00CD2B6F /* FileManagerExtension-Master */,
 				90EE9E35265CE9EF00CD2B6F /* Products */,
+				90EE9E4B265CF89400CD2B6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +59,7 @@
 		90EE9E36265CE9EF00CD2B6F /* FileManagerExtension-Master */ = {
 			isa = PBXGroup;
 			children = (
+				90EE9E46265CEA2800CD2B6F /* PersonModel.swift */,
 				90EE9E37265CE9EF00CD2B6F /* FileManagerExtension_MasterApp.swift */,
 				90EE9E39265CE9EF00CD2B6F /* ContentView.swift */,
 				90EE9E3B265CE9F200CD2B6F /* Assets.xcassets */,
@@ -67,6 +75,13 @@
 				90EE9E3E265CE9F200CD2B6F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		90EE9E4B265CF89400CD2B6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +100,9 @@
 			dependencies = (
 			);
 			name = "FileManagerExtension-Master";
+			packageProductDependencies = (
+				90EE9E50265CFBB500CD2B6F /* FileManagerExtension */,
+			);
 			productName = "FileManagerExtension-Master";
 			productReference = 90EE9E34265CE9EF00CD2B6F /* FileManagerExtension-Master.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90EE9E48265CEA2800CD2B6F /* PersonModel.swift in Sources */,
 				90EE9E3A265CE9EF00CD2B6F /* ContentView.swift in Sources */,
 				90EE9E38265CE9EF00CD2B6F /* FileManagerExtension_MasterApp.swift in Sources */,
 			);
@@ -328,6 +347,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		90EE9E50265CFBB500CD2B6F /* FileManagerExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FileManagerExtension;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 90EE9E2C265CE9EF00CD2B6F /* Project object */;
 }

@@ -12,6 +12,7 @@ struct FileManagerExtension_MasterApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(People())
         }
     }
 }
